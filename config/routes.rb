@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   # root vai ser usado para definir a página principal
   
   
-resources :articles
+resources :articles do
+  resources :comments
+end
  
   
 end
